@@ -1,0 +1,47 @@
+shore app/                          # 项目根目录（建议用英文名，便于国际传播）
+├── README.md                    # 项目首页（必须有中英文版本）
+├── LICENSE                      # 开源协议文件（推荐 MIT）
+├── .gitignore                   # Git 忽略文件
+├── .editorconfig                # 代码风格统一配置（可选但推荐）
+├── CONTRIBUTING.md              # 如何贡献代码
+├── CODE_OF_CONDUCT.md           # 社区行为准则（推荐采用 Contributor Covenant）
+├── CHANGELOG.md                 # 版本更新日志
+├── SECURITY.md                  # 安全政策（可选，但大型项目推荐）
+│
+├── docs/                        # 所有文档
+│   ├── README.md                # 文档总入口
+│   ├── architecture.md          # 项目架构说明
+│   ├── api.md                   # 接口文档（如果有后端）
+│   ├── setup.md                 # 环境搭建指南
+│   └── screenshots/             # 截图文件夹
+│
+├── src/                         # 核心源代码（把你现有的代码整体放进来）
+│   ├── main/                    # 主代码目录（根据框架调整）
+│   ├── assets/                  # 图片、字体等资源
+│   └── config/                  # 配置文件
+│
+├── tests/                       # 测试代码
+│   ├── unit/                    # 单元测试
+│   └── integration/             # 集成测试
+│
+├── examples/                    # 示例项目 / Demo（方便别人快速上手）
+│
+├── scripts/                     # 构建、部署、工具脚本
+│   ├── build.sh
+│   └── release.sh
+│
+├── .github/                     # GitHub 专属配置（非常重要）
+│   ├── workflows/               # CI/CD 流水线（GitHub Actions）
+│   │   └── ci.yml               # 自动测试 + 构建
+│   ├── ISSUE_TEMPLATE/          # Issue 模板
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   ├── PULL_REQUEST_TEMPLATE.md # PR 模板
+│   └── FUNDING.yml              # 赞助链接（可选）
+│
+├── build/                       # 构建输出目录（必须加入 .gitignore）
+└── （框架专属配置文件）         # 根据你的技术栈放这里
+    # Flutter → pubspec.yaml
+    # React Native → package.json
+    # Android → build.gradle / settings.gradle
+    # iOS → Podfile / .xcodeproj
